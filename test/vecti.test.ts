@@ -17,32 +17,16 @@ describe.concurrent('Vector', () => {
   })
 
   describe('has operations that', () => {
-    describe('add to vectors', () => {
-      it('a scalar', () => {
-        const vector = new Vector(42, 7).add(7)
-        expect(vector.x).toEqual(49)
-        expect(vector.y).toEqual(14)
-      })
-
-      it('another vector', () => {
-        const vector = new Vector(42, 7).add(new Vector(-7, 7))
-        expect(vector.x).toEqual(35)
-        expect(vector.y).toEqual(14)
-      })
+    it('adds another vector', () => {
+      const vector = new Vector(42, 7).add(new Vector(-7, 7))
+      expect(vector.x).toEqual(35)
+      expect(vector.y).toEqual(14)
     })
 
-    describe('subtract from vector', () => {
-      it('a scalar', () => {
-        const vector = new Vector(42, 7).subtract(7)
-        expect(vector.x).toEqual(35)
-        expect(vector.y).toEqual(0)
-      })
-
-      it('another vector', () => {
-        const vector = new Vector(42, 7).subtract(new Vector(-7, 7))
-        expect(vector.x).toEqual(49)
-        expect(vector.y).toEqual(0)
-      })
+    it('subtracts another vector', () => {
+      const vector = new Vector(42, 7).subtract(new Vector(-7, 7))
+      expect(vector.x).toEqual(49)
+      expect(vector.y).toEqual(0)
     })
 
     it('multiply vectors by scalars', () => {
@@ -106,9 +90,7 @@ describe.concurrent('Vector', () => {
     it('do not mutate', () => {
       const vector = new Vector(1, 1)
       const other = Vector.of([42, 42])
-      vector.add(42)
       vector.add(other)
-      vector.subtract(42)
       vector.subtract(other)
       vector.multiply(42)
       vector.divide(42)

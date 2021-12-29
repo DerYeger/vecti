@@ -22,26 +22,20 @@ export class Vector {
   public constructor(public readonly x: number, public readonly y: number) {}
 
   /**
-   * Add another vector or scalar to the vector.
-   * @param val - The vector or scalar to be added.
+   * Add another vector to the vector.
+   * @param val - The vector to be added.
    * @returns The resulting vector of the addition.
    */
-  public add(val: Vector | number): Vector {
-    if (typeof val === 'number') {
-      return new Vector(this.x + val, this.y + val)
-    }
+  public add(val: Vector): Vector {
     return new Vector(this.x + val.x, this.y + val.y)
   }
 
   /**
-   * Subtract another vector or scalar from the vector.
-   * @param val - The vector or scalar to be added.
+   * Subtract another vector from the vector.
+   * @param val - The vector to be added.
    * @returns The resulting vector of the subtraction.
    */
-  public subtract(val: Vector | number): Vector {
-    if (typeof val === 'number') {
-      return new Vector(this.x - val, this.y - val)
-    }
+  public subtract(val: Vector): Vector {
     return new Vector(this.x - val.x, this.y - val.y)
   }
 
