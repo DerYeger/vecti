@@ -1,5 +1,10 @@
+<p align="center">
+  <img src="docs/logo.svg" alt="Logo" width="164px" height="164px">
+</p>
+
 <h1 align="center">Vecti</h1>
 
+<hr />
 
 <p align="center">
     A tiny TypeScript library for 2D vector math.
@@ -34,6 +39,10 @@
 - 📐 Rotation by radians and degrees
 - 🪨 Immutable data structure encourages chaining
 - 💾 Tiny and typed
+
+## Projects using Vecti
+
+- [d3-graph-controller](https://github.com/DerYeger/d3-graph-controller/blob/master/src/lib/paths.ts)
 
 ## Installation
 

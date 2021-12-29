@@ -1,0 +1,34 @@
+<?xml version="1.0" standalone="no"?>
+<svg viewBox="0 0 512 512" height="512" width="512" xmlns="http://www.w3.org/2000/svg">
+  <style type="text/css">
+    .primary {
+      fill: #729B1B;
+      stroke: #729B1B;
+    }
+    .secondary {
+      fill: #435818;
+      stroke: #435818;
+    }
+    .background {
+      fill: #141414;
+    }
+    path.primary {
+      stroke-width: 24px;
+    }
+    path.secondary {
+      stroke-width: 24px;
+    }
+  </style>
+
+  <circle cx="256" cy="256" r="230.4" class="background" />
+
+  <path d="M256,409.6 L256,102.4" class="secondary" />
+  <circle cx="256" cy="409.4" r="11.5" class="primary" />
+  <polygon points="256,102.4 280,102.4 256,66.4 232,102.4" class="secondary" />
+
+  <path d="M256,409.6 L102.4,153.6" class="primary" />
+  <circle cx="102.4" cy="153.6" r="11.5" class="primary" />
+
+  <path d="M256,409.6 L409.6,153.6" class="primary" />
+  <circle cx="409.6" cy="153.6" r="11.5" class="primary" />
+</svg>
