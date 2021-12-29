@@ -1,5 +1,6 @@
 ---
 editLink: true
+contributors: false
 ---
 # Guide
 
@@ -15,7 +16,7 @@ yarn add vecti
   <CodeGroupItem title="npm">
 
 ```bash:no-line-numbers
-yarn install vecti
+npm install vecti
 ```
   </CodeGroupItem>
 </CodeGroup>
@@ -34,7 +35,7 @@ import { Vector } from 'vecti'
 ```
 
 
-Instances of the `Vector` class can be created either by using its constructor or the static method of the class.
+Instances of the `Vector` class can be created by using either its constructor or the static method `of`.
 The latter accepts a `number` array of length 2, with the first element being the x-axis component and the second element being the y-axis component.
 
 ```ts

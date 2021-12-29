@@ -1,5 +1,6 @@
 ---
 home: true
+heroImage: ./logo.svg
 actions:
 - text: Guide
   link: /guide/README.md
@@ -7,9 +8,9 @@ actions:
 features:
 - title: 🧮 Easy to use
   details: Addition, subtraction, multiplication and division.
-- title: 📐 All the calculations you need 
+- title: 📐 Easy to master
   details: Computation of length and normalized vectors, dot and cross product. Rotation by radians and degrees.
-- title: ✨ Rock solid and tiny
+- title: ✨ Immutable, tiny
   details: Immutable data structure encourages chaining. No dependencies. Tiny and typed.
 ---
 

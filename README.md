@@ -4,8 +4,6 @@
 
 <h1 align="center">Vecti</h1>
 
-<hr />
-
 <p align="center">
     A tiny TypeScript library for 2D vector math.
 </p>
