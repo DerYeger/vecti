@@ -17,7 +17,7 @@ export default defineConfig({
   ],
   build: {
     lib: {
-      entry: path.resolve(__dirname, 'src/main.ts'),
+      entry: path.resolve(__dirname, 'src/vecti.ts'),
       formats: ['es', 'umd'],
       name: Meta.name,
       fileName: (format) => `${Meta.name}.${format}.js`,
