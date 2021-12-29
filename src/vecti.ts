@@ -76,7 +76,7 @@ export class Vector {
   }
 
   /**
-   * Calculate the length of the vector.
+   * Calculate the length of the vector using the L2 norm.
    * @returns The length.
    */
   public length(): number {
@@ -84,7 +84,7 @@ export class Vector {
   }
 
   /**
-   * Normalize the vector.
+   * Normalize the vector using the L2 norm.
    * @returns The normalized vector.
    */
   public normalize(): Vector {
