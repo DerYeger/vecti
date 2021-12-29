@@ -1,0 +1,30 @@
+name: CD
+
+on:
+  push:
+    branches: [master]
+    paths:
+      - 'docs/**'
+  release:
+    types: [created]
+
+jobs:
+  docs:
+    name: Build docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Yarn setup
+        uses: DerYeger/yarn-setup-action@master
+        with:
+          node-version: 16
+      - name: Build
+        run: yarn docs:build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@4.1.8
+        with:
+          branch: gh-pages
+          folder: ./docs/.vuepress/dist
+          clean: true
+          single-commit: true
+          git-config-name: Jan Müller
+          git-config-email: janmueller3698@gmail.com
