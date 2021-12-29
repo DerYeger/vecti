@@ -43,7 +43,7 @@
       "require": "./dist/vecti.umd.js"
     }
   },
-  "types": "dist/types/src/main.d.ts",
+  "types": "dist/types/src/vecti.d.ts",
   "sideEffects": false,
   "devDependencies": {
     "@commitlint/cli": "16.0.1",
@@ -56,6 +56,7 @@
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-import": "2.25.3",
     "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-tsdoc": "0.2.14",
     "eslint-plugin-unused-imports": "2.0.0",
     "eslint-plugin-vue": "8.2.0",
     "husky": "7.0.4",
