@@ -61,6 +61,7 @@ describe.concurrent('Vector', () => {
       const normalized = new Vector(-5, 0).normalize()
       expect(normalized.x).toEqual(-1)
       expect(normalized.y).toEqual(0)
+      expect(normalized.length()).toEqual(1)
     })
 
     describe('rotate vectors', () => {
