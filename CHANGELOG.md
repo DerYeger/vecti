@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/DerYeger/vecti/compare/v1.0.0...v1.0.1) (2021-12-29)
+
+
+### Bug Fixes
+
+* remove undefined operations ([b182aa0](https://github.com/DerYeger/vecti/commit/b182aa0a9445d2c7cf71679fea46ec4d9735679a))
+
 # 1.0.0 (2021-12-29)
 
 
