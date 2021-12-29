@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/DerYeger/vecti/compare/v1.0.1...v1.0.2) (2021-12-29)
+
+
+### Bug Fixes
+
+* **docs:** specify used norm ([991d41c](https://github.com/DerYeger/vecti/commit/991d41cb251c4bc72bb14696e8f8382b867ca6ff))
+
 ## [1.0.1](https://github.com/DerYeger/vecti/compare/v1.0.0...v1.0.1) (2021-12-29)
 
 
