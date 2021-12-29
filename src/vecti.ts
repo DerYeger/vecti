@@ -67,7 +67,7 @@ export class Vector {
   }
 
   /**
-   * Calculate the cross product of the vector and another vector.
+   * Calculate the cross product of the vector and another vector. The cross product of two vectors `a` and `b` is defined as `a.x * b.y - a.y * b.x`.
    * @param other - The other vector used for calculating the cross product.
    * @returns The cross product.
    */
@@ -93,7 +93,7 @@ export class Vector {
   }
 
   /**
-   * Rotate the vector by the given radians.
+   * Rotate the vector by the given radians counterclockwise.
    * @param radians - The radians the vector will be rotated by.
    * @returns The rotated vector.
    */
@@ -104,7 +104,7 @@ export class Vector {
   }
 
   /**
-   * Rotate the vector by the given degrees.
+   * Rotate the vector by the given degrees counterclockwise.
    * @param degrees - The degrees the vector will be rotated by.
    * @returns The rotated vector.
    */

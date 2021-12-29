@@ -1,35 +1,6 @@
-<p align="center">
-  <img src="docs/.vuepress/public/logo.svg" alt="Logo" width="164px" height="164px">
-</p>
+# Vecti
 
-<h1 align="center">Vecti</h1>
-
-<hr />
-
-<p align="center">
-    A tiny TypeScript library for 2D vector math.
-</p>
-
-<p align="center">
-  <a href="https://github.com/DerYeger/vecti/actions/workflows/ci.yml">
-    <img alt="CI" src="https://img.shields.io/github/workflow/status/DerYeger/vecti/CI?label=ci&logo=github&color=#4DC71F">
-  </a>
-  <a href="https://www.npmjs.com/package/vecti">
-    <img alt="NPM" src="https://img.shields.io/npm/v/vecti?logo=npm">
-  </a>
-  <a href="https://codecov.io/gh/DerYeger/vecti">
-    <img alt="Coverage" src="https://codecov.io/gh/DerYeger/vecti/branch/master/graph/badge.svg?token=p35W6u2noe">
-  </a>
-  <a href="https://lgtm.com/projects/g/DerYeger/vecti">
-    <img alt="LGTM Grade" src="https://img.shields.io/lgtm/grade/javascript/github/DerYeger/vecti?logo=lgtm">
-  </a>
-  <a href="https://opensource.org/licenses/MIT">
-    <img alt="MIT" src="https://img.shields.io/npm/l/vecti?color=%234DC71F">
-  </a>
-  <a href="https://bundlephobia.com/package/vecti">
-    <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/minzip/vecti">
-  </a>
-</p>
+A tiny TypeScript library for 2D vector math.
 
 ## Features
 
@@ -44,27 +15,36 @@
 
 - [d3-graph-controller](https://github.com/DerYeger/d3-graph-controller) - Calculation of graph [edge paths](https://github.com/DerYeger/d3-graph-controller/blob/master/src/lib/paths.ts)
 
-
 ## Installation
 
-```bash
-# yarn
-$ yarn add vecti
+<CodeGroup>
+  <CodeGroupItem title="Yarn" active>
 
-# npm
-$ npm install vecti
+```bash:no-line-numbers
+yarn add vecti
 ```
+  </CodeGroupItem>
+  <CodeGroupItem title="npm">
+
+```bash:no-line-numbers
+yarn install vecti
+```
+  </CodeGroupItem>
+</CodeGroup>
 
 ## Usage
 
+::: tip
 Vectors have two properties, `x` and `y`, representing their components.
 Since vectors are entirely immutable, they are read-only.
+:::
 
 To use Vecti, add the following import to your TypeScript file.
 
 ```ts
 import { Vector } from 'vecti'
 ```
+
 
 Instances of the `Vector` class can be created either by using its constructor or the static method of the class.
 The latter accepts a `number` array of length 2, with the first element being the x-axis component and the second element being the y-axis component.
@@ -160,7 +140,9 @@ console.log(c) // == 5
 
 The length of a vector can be calculated using the `length` method.
 
+::: tip
 Length is defined as the **L2 norm**.
+:::
 
 ```ts
 const a = new Vector(1, 0)
@@ -192,8 +174,10 @@ console.log(b.length()) // == 1
 
 Vectors can be rotated by radians or degrees using the methods `rotateByRadians` and `rotateByDegrees` respectively.
 
+::: warning
 Due to the rotation using `Math.sin` and `Math.cos`, rounding errors can occur.
 Notice that in the example below, the resulting x-component is **6.123233995736766e-17** and not **0** as expected.
+:::
 
 ```ts
 const a = new Vector(1, 0)
@@ -218,23 +202,3 @@ const vector = new Vector(-5, 0)
   .multiply(42)
 console.log(vector) // == Vector { x: 42, y: 41.99999999999999 }
 ```
-
-## Development
-
-```bash
-# install dependencies
-$ yarn install
-
-# build for production
-$ yarn build
-
-# lint project files
-$ yarn lint
-
-# run tests
-$ yarn test
-```
-
-## License
-
-[MIT](./LICENSE) - Copyright &copy; Jan Müller
