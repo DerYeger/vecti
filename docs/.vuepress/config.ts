@@ -54,6 +54,10 @@ export default defineUserConfig<DefaultThemeOptions, ViteBundlerOptions>({
     repo: Meta.repository.replace('github:', ''),
     docsBranch: 'master',
     docsDir: 'docs',
+    navbar: [
+      { text: 'Home', link: '/' },
+      { text: 'Guide', link: '/guide/' },
+    ],
   },
 
   bundler: '@vuepress/vite',

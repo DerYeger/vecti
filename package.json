@@ -24,7 +24,6 @@
     "build": "tsc --noEmit && vite build",
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs",
-    "docs:preview": "yarn docs:build && vitepress serve docs",
     "lint": "yarn lint:prettier && yarn lint:eslint",
     "lint:commits": "yarn commitlint --from=HEAD~1",
     "lint:eslint": "eslint \"./**/*.{js,ts,vue}\"",
