@@ -51,7 +51,6 @@ export class Vector {
   }
 
   public rotateByDegrees(deg: number): Vector {
-    const rad = deg * (Math.PI / 180)
-    return this.rotateByRadians(rad)
+    return this.rotateByRadians((deg * Math.PI) / 180)
   }
 }
