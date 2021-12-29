@@ -1,0 +1,76 @@
+{
+  "name": "vecti",
+  "description": "A tiny TypeScript library 2D vector math.",
+  "version": "0.0.0",
+  "license": "MIT",
+  "repository": "github:DerYeger/vecti",
+  "bugs": {
+    "url": "https://github.com/DerYeger/vecti/issues"
+  },
+  "author": {
+    "name": "Jan Müller",
+    "url": "https://github.com/DerYeger"
+  },
+  "keywords": [
+    "vector",
+    "math",
+    "2d"
+  ],
+  "scripts": {
+    "prepare": "husky install",
+    "prebuild": "rimraf ./dist",
+    "build": "tsc --noEmit && vite build",
+    "lint": "yarn lint:prettier && yarn lint:eslint",
+    "lint:commits": "yarn commitlint --from=HEAD~1",
+    "lint:eslint": "eslint \"./**/*.{js,ts,vue}\"",
+    "lint:prettier": "prettier --check \"./**/*.{js,json,html,scss,ts,vue,yml}\"",
+    "fix": "yarn pretty && yarn lint:eslint --fix ",
+    "test": "vitest",
+    "test:ci": "rimraf ./coverage && c8 --reporter=lcov --reporter=text vitest --run",
+    "test:run": "vitest --run --passWithNoTests",
+    "pretty": "prettier --write \"./**/*.{js,json,html,scss,ts,vue,yml}\"",
+    "prepublishOnly": "yarn build"
+  },
+  "files": [
+    "dist"
+  ],
+  "main": "./dist/vecti.umd.js",
+  "module": "./dist/vecti.es.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vecti.es.js",
+      "require": "./dist/vecti.umd.js"
+    }
+  },
+  "types": "dist/types/src/main.d.ts",
+  "sideEffects": false,
+  "devDependencies": {
+    "@commitlint/cli": "16.0.1",
+    "@commitlint/config-conventional": "16.0.0",
+    "@types/node": "16.11.17",
+    "@typescript-eslint/eslint-plugin": "5.8.1",
+    "@typescript-eslint/parser": "5.8.1",
+    "c8": "7.10.0",
+    "eslint": "8.5.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-plugin-import": "2.25.3",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-unused-imports": "2.0.0",
+    "eslint-plugin-vue": "8.2.0",
+    "husky": "7.0.4",
+    "lint-staged": "12.1.4",
+    "prettier": "2.5.1",
+    "rimraf": "3.0.2",
+    "typescript": "4.5.4",
+    "vite": "2.7.9",
+    "vite-plugin-dts": "0.9.6",
+    "vitest": "0.0.118"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "lint-staged": {
+    "*.{js,json,html,scss,ts,vue,yml}": "prettier --write",
+    "*.{js,json,ts,vue}": "eslint --fix"
+  }
+}
