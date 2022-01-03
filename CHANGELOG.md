@@ -1,3 +1,15 @@
+# [2.0.0](https://github.com/DerYeger/vecti/compare/v1.0.2...v2.0.0) (2022-01-03)
+
+
+### Bug Fixes
+
+* implement correct dot product ([3dfda7a](https://github.com/DerYeger/vecti/commit/3dfda7a97079b31f795b49031ba0465cbbff3f4b))
+
+
+### BREAKING CHANGES
+
+* `dot` now returns a number instead of a new `Vector`
+
 ## [1.0.2](https://github.com/DerYeger/vecti/compare/v1.0.1...v1.0.2) (2021-12-29)
 
 
