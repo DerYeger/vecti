@@ -103,12 +103,12 @@ console.log(b) // == Vector { x: 2, y: 1 }
 The dot product of two vectors can be calculated using the `dot` method.
 
 ```ts
-const a = new Vector(2, 1)
+const a = new Vector(2, 3)
 const b = new Vector(1, 3)
 
 const c = a.dot(b)
 
-console.log(c) // == Vector { x: 2, y: 3 }
+console.log(c) // == 11
 ```
 
 ### Cross product
@@ -123,6 +123,19 @@ const b = new Vector(1, 3)
 const c = a.cross(b)
 
 console.log(c) // == 5
+```
+
+### Hadamard product
+
+The Hadamard product of two vectors can be calculated using the `hadamard` method.
+
+```ts
+const a = new Vector(2, 1)
+const b = new Vector(1, 3)
+
+const c = a.hadamard(b)
+
+console.log(c) // == Vector { x: 2, y: 3 }
 ```
 
 ### Length

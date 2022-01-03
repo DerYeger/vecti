@@ -62,8 +62,8 @@ export class Vector {
    * @param other - The other vector used for calculating the dot product.
    * @returns The dot product.
    */
-  public dot(other: Vector): Vector {
-    return new Vector(this.x * other.x, this.y * other.y)
+  public dot(other: Vector): number {
+    return this.x * other.x + this.y * other.y
   }
 
   /**
@@ -73,6 +73,15 @@ export class Vector {
    */
   public cross(other: Vector): number {
     return this.x * other.y - other.x * this.y
+  }
+
+  /**
+   * Calculate the Hadamard product of the vector and another vector.
+   * @param other - The other vector used for calculating the Hadamard product.
+   * @returns The Hadamard product.
+   */
+  public hadamard(other: Vector): Vector {
+    return new Vector(this.x * other.x, this.y * other.y)
   }
 
   /**

@@ -9,7 +9,7 @@ features:
 - title: 🧮 Easy to use
   details: Addition, subtraction, multiplication and division.
 - title: 📐 Easy to master
-  details: Computation of length and normalized vectors, dot and cross product. Rotation by radians and degrees.
+  details: Computation of length and normalized vectors, dot, cross and Hadamard product. Rotation by radians and degrees.
 - title: ✨ Immutable, tiny
   details: Immutable data structure encourages chaining. No dependencies. Tiny and typed.
 footer: "MIT - Copyright &copy; Jan Müller"

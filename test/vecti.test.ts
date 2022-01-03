@@ -17,39 +17,48 @@ describe.concurrent('Vector', () => {
   })
 
   describe('has operations that', () => {
-    it('adds another vector', () => {
-      const vector = new Vector(42, 7).add(new Vector(-7, 7))
-      expect(vector.x).toEqual(35)
-      expect(vector.y).toEqual(14)
+    describe('with a scalar', () => {
+      it('multiply', () => {
+        const vector = new Vector(42, 7).multiply(2)
+        expect(vector.x).toEqual(84)
+        expect(vector.y).toEqual(14)
+      })
+
+      it('divide', () => {
+        const vector = new Vector(42, 7).divide(7)
+        expect(vector.x).toEqual(6)
+        expect(vector.y).toEqual(1)
+      })
     })
 
-    it('subtracts another vector', () => {
-      const vector = new Vector(42, 7).subtract(new Vector(-7, 7))
-      expect(vector.x).toEqual(49)
-      expect(vector.y).toEqual(0)
-    })
+    describe('with another vector', () => {
+      it('add', () => {
+        const vector = new Vector(42, 7).add(new Vector(-7, 7))
+        expect(vector.x).toEqual(35)
+        expect(vector.y).toEqual(14)
+      })
 
-    it('multiply vectors by scalars', () => {
-      const vector = new Vector(42, 7).multiply(2)
-      expect(vector.x).toEqual(84)
-      expect(vector.y).toEqual(14)
-    })
+      it('subtract', () => {
+        const vector = new Vector(42, 7).subtract(new Vector(-7, 7))
+        expect(vector.x).toEqual(49)
+        expect(vector.y).toEqual(0)
+      })
 
-    it('divide vectors by scalars', () => {
-      const vector = new Vector(42, 7).divide(7)
-      expect(vector.x).toEqual(6)
-      expect(vector.y).toEqual(1)
-    })
+      it('calculate the dot product', () => {
+        const dotProduct = new Vector(1.5, 0.5).dot(new Vector(2, 8))
+        expect(dotProduct).toEqual(7)
+      })
 
-    it('calculate dot products of vectors', () => {
-      const dotProduct = new Vector(42, 7).dot(new Vector(-1, 2))
-      expect(dotProduct.x).toEqual(-42)
-      expect(dotProduct.y).toEqual(14)
-    })
+      it('calculate the cross product', () => {
+        const crossProduct = new Vector(2, 3).cross(new Vector(-1, 2))
+        expect(crossProduct).toEqual(7)
+      })
 
-    it('calculate cross products of vectors', () => {
-      const crossProduct = new Vector(2, 3).cross(new Vector(-1, 2))
-      expect(crossProduct).toEqual(7)
+      it('calculate the Hadamard product', () => {
+        const hadamardProduct = new Vector(42, 7).hadamard(new Vector(-1, 2))
+        expect(hadamardProduct.x).toEqual(-42)
+        expect(hadamardProduct.y).toEqual(14)
+      })
     })
 
     it('calculate length', () => {
@@ -98,6 +107,7 @@ describe.concurrent('Vector', () => {
       vector.normalize()
       vector.dot(other)
       vector.cross(other)
+      vector.hadamard(other)
       vector.rotateByRadians(Math.PI * 0.5)
       vector.rotateByDegrees(180)
       expect(vector).toEqual(new Vector(1, 1))
