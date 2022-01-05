@@ -54,7 +54,7 @@
     "@types/node": "16.11.19",
     "@typescript-eslint/eslint-plugin": "5.8.1",
     "@typescript-eslint/parser": "5.8.1",
-    "@vitest/ui": "0.0.131",
+    "@vitest/ui": "0.0.132",
     "@vue/component-compiler-utils": "3.3.0",
     "@vuepress/plugin-register-components": "1.9.5",
     "c8": "7.11.0",
