@@ -921,13 +921,13 @@
     "@vuepress/core" "2.0.0-beta.33"
     prismjs "^1.26.0"
 
-"@vuepress/plugin-register-components@1.9.5":
-  version "1.9.5"
-  resolved "https://registry.yarnpkg.com/@vuepress/plugin-register-components/-/plugin-register-components-1.9.5.tgz#7d0628a7bf4937ea32573f884479be8b47090678"
-  integrity sha512-2eFqboPCOSY8bh7lkd13Cs7vyUcETEzzYnK/7CjqaeDmYtiJuWCoPjF30K2RsdbpVCE5aqheyXmBSEp2uWEosA==
+"@vuepress/plugin-register-components@1.9.7":
+  version "1.9.7"
+  resolved "https://registry.yarnpkg.com/@vuepress/plugin-register-components/-/plugin-register-components-1.9.7.tgz#0234f887b32c1d836fa68cdd06d7e851397fd268"
+  integrity sha512-l/w1nE7Dpl+LPMb8+AHSGGFYSP/t5j6H4/Wltwc2QcdzO7yqwC1YkwwhtTXvLvHOV8O7+rDg2nzvq355SFkfKA==
   dependencies:
-    "@vuepress/shared-utils" "1.9.5"
-    "@vuepress/types" "1.9.5"
+    "@vuepress/shared-utils" "1.9.7"
+    "@vuepress/types" "1.9.7"
 
 "@vuepress/plugin-theme-data@2.0.0-beta.33":
   version "2.0.0-beta.33"
@@ -940,10 +940,10 @@
     "@vuepress/utils" "2.0.0-beta.33"
     vue "^3.2.26"
 
-"@vuepress/shared-utils@1.9.5":
-  version "1.9.5"
-  resolved "https://registry.yarnpkg.com/@vuepress/shared-utils/-/shared-utils-1.9.5.tgz#8c6408f65ea6ea227046a2ae34470026cc51733c"
-  integrity sha512-WA6lq5YwbG3HX3yVhMsrsw6zqDUiiMsUsBJCk/gNwbWng/NTibR/f+DkUyD/tw8fYuNu5EDK8wPn+qyLhcrjJg==
+"@vuepress/shared-utils@1.9.7":
+  version "1.9.7"
+  resolved "https://registry.yarnpkg.com/@vuepress/shared-utils/-/shared-utils-1.9.7.tgz#f1203c7f48e9d546078f5f9b2ec5200b29da481b"
+  integrity sha512-lIkO/eSEspXgVHjYHa9vuhN7DuaYvkfX1+TTJDiEYXIwgwqtvkTv55C+IOdgswlt0C/OXDlJaUe1rGgJJ1+FTw==
   dependencies:
     chalk "^2.3.2"
     escape-html "^1.0.3"
@@ -987,10 +987,10 @@
     vue "^3.2.26"
     vue-router "^4.0.12"
 
-"@vuepress/types@1.9.5":
-  version "1.9.5"
-  resolved "https://registry.yarnpkg.com/@vuepress/types/-/types-1.9.5.tgz#9fe265fac3236cd5f9c01216553825461d5eca9b"
-  integrity sha512-fu1Wyi+cPFyn7nfxNH4MVvU5glYvRB0RMI7besq9kiI/KkZJPb2G1hITopECJOGk+6G/cOU/iSdUDUHH4GQLgA==
+"@vuepress/types@1.9.7":
+  version "1.9.7"
+  resolved "https://registry.yarnpkg.com/@vuepress/types/-/types-1.9.7.tgz#aeb772fd0f7c2a10c6ec1d3c803a2e4b1d756c24"
+  integrity sha512-moLQzkX3ED2o18dimLemUm7UVDKxhcrJmGt5C0Ng3xxrLPaQu7UqbROtEKB3YnMRt4P/CA91J+Ck+b9LmGabog==
   dependencies:
     "@types/markdown-it" "^10.0.0"
     "@types/webpack-dev-server" "^3"
