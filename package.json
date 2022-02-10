@@ -51,7 +51,7 @@
   "devDependencies": {
     "@commitlint/cli": "16.1.0",
     "@commitlint/config-conventional": "16.0.0",
-    "@types/node": "16.11.22",
+    "@types/node": "16.11.24",
     "@typescript-eslint/eslint-plugin": "5.11.0",
     "@typescript-eslint/parser": "5.11.0",
     "@vitest/ui": "0.3.2",
