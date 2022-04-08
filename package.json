@@ -62,7 +62,7 @@
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "2.26.0",
     "eslint-plugin-prettier": "4.0.0",
-    "eslint-plugin-tsdoc": "0.2.14",
+    "eslint-plugin-tsdoc": "0.2.15",
     "eslint-plugin-unused-imports": "2.0.0",
     "eslint-plugin-vue": "8.6.0",
     "husky": "7.0.4",
