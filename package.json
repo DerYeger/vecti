@@ -73,7 +73,7 @@
     "vite": "2.9.9",
     "vite-plugin-dts": "1.2.0",
     "vitest": "0.12.9",
-    "vuepress": "2.0.0-beta.45"
+    "vuepress": "2.0.0-beta.46"
   },
   "publishConfig": {
     "access": "public"
