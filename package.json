@@ -61,7 +61,7 @@
     "eslint": "8.18.0",
     "eslint-config-prettier": "8.5.0",
     "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-prettier": "4.1.0",
     "eslint-plugin-tsdoc": "0.2.16",
     "eslint-plugin-unused-imports": "2.0.0",
     "eslint-plugin-vue": "9.1.1",
@@ -70,7 +70,7 @@
     "prettier": "2.7.1",
     "rimraf": "3.0.2",
     "typescript": "4.7.4",
-    "vite": "2.9.12",
+    "vite": "2.9.13",
     "vite-plugin-dts": "1.2.0",
     "vitest": "0.16.0",
     "vuepress": "2.0.0-beta.48"
