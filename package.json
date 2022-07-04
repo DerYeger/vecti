@@ -51,10 +51,10 @@
   "devDependencies": {
     "@commitlint/cli": "17.0.3",
     "@commitlint/config-conventional": "17.0.3",
-    "@types/node": "16.11.42",
+    "@types/node": "16.11.43",
     "@typescript-eslint/eslint-plugin": "5.30.3",
     "@typescript-eslint/parser": "5.30.3",
-    "@vitest/ui": "0.16.0",
+    "@vitest/ui": "0.17.0",
     "@vue/component-compiler-utils": "3.3.0",
     "@vuepress/plugin-register-components": "1.9.7",
     "c8": "7.11.3",
@@ -72,7 +72,7 @@
     "typescript": "4.7.4",
     "vite": "2.9.13",
     "vite-plugin-dts": "1.2.0",
-    "vitest": "0.16.0",
+    "vitest": "0.17.0",
     "vuepress": "2.0.0-beta.48"
   },
   "publishConfig": {
