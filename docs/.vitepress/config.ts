@@ -1,11 +1,9 @@
-import { defaultTheme, defineUserConfig, viteBundler } from 'vuepress'
-import registerComponentsPlugin from '@vuepress/plugin-register-components'
+import { defineConfig } from 'vitepress'
 import Meta from '../../package.json'
-import * as path from 'path'
 
 const name = Meta.name.charAt(0).toUpperCase() + Meta.name.slice(1)
 
-export default defineUserConfig({
+export default defineConfig({
   // site config
   lang: 'en-US',
   title: name,
@@ -47,27 +45,37 @@ export default defineUserConfig({
     ['link', { rel: 'icon', href: '/logo.svg', type: 'image/svg+xml' }],
   ],
 
+  markdown: {
+    theme: {
+      light: 'vitesse-light',
+      dark: 'vitesse-dark',
+    },
+  },
+
   // theme and its config
-  theme: defaultTheme({
+  themeConfig: {
     logo: '/logo.svg',
-    repo: Meta.repository.replace('github:', ''),
-    docsBranch: 'master',
-    docsDir: 'docs',
-    navbar: [
+    editLink: {
+      pattern: 'https://github.com/DerYeger/vecti/tree/master/docs/:path',
+      text: 'Suggest changes to this page',
+    },
+
+    nav: [
       { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
     ],
-  }),
 
-  bundler: viteBundler({
-    viteOptions: {
-      configFile: 'docs/vite.config.ts',
+    socialLinks: [
+      { icon: 'twitter', link: 'https://twitter.com/DerYeger' },
+      {
+        icon: 'github',
+        link: 'https://github.com/DerYeger/vecti',
+      },
+    ],
+
+    footer: {
+      message: 'Released under the MIT License.',
+      copyright: 'Copyright © 2021-PRESENT Jan Müller',
     },
-  }),
-
-  plugins: [
-    registerComponentsPlugin({
-      componentsDir: path.resolve(__dirname, './components'),
-    }),
-  ],
+  },
 })

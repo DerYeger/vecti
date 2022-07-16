@@ -2,24 +2,18 @@
 editLink: true
 contributors: false
 ---
+
 # Guide
 
 ## Installation
 
-<CodeGroup>
-  <CodeGroupItem title="Yarn" active>
-
-```bash:no-line-numbers
+```bash
+# with yarn
 yarn add vecti
-```
-  </CodeGroupItem>
-  <CodeGroupItem title="npm">
 
-```bash:no-line-numbers
+# or npm
 npm install vecti
 ```
-  </CodeGroupItem>
-</CodeGroup>
 
 ## Usage
 
@@ -33,7 +27,6 @@ To use Vecti, add the following import to your TypeScript file.
 ```ts
 import { Vector } from 'vecti'
 ```
-
 
 Instances of the `Vector` class can be created by using either its constructor or the static method `of`.
 The latter accepts a `number` array of length 2, with the first element being the x-axis component and the second element being the y-axis component.
@@ -185,7 +178,6 @@ Notice that in the example below, the resulting x-component is **6.1232339957367
 const a = new Vector(1, 0)
 
 console.log(a.rotateByDegrees(90)) // == Vector { x: 6.123233995736766e-17, y: 1 }
-
 
 console.log(a.rotateByRadians(Math.PI / 2)) // == Vector { x: 6.123233995736766e-17, y: 1 }
 ```

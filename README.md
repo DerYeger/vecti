@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/.vuepress/public/logo.svg" alt="Logo" width="164px" height="164px">
+  <img src="docs/public/logo.svg" alt="Logo" width="164px" height="164px">
 </p>
 
 <h1 align="center">Vecti</h1>
