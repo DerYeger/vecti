@@ -1,3 +1,10 @@
+## [2.0.25](https://github.com/DerYeger/vecti/compare/v2.0.24...v2.0.25) (2022-07-16)
+
+
+### Bug Fixes
+
+* **release:** schedule release ([56f01a8](https://github.com/DerYeger/vecti/commit/56f01a85164cca8305044c335dfdbfc87ed43bdd))
+
 ## [2.0.24](https://github.com/DerYeger/vecti/compare/v2.0.23...v2.0.24) (2022-07-09)
 
 
