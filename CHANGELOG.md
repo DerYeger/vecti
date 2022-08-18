@@ -1,3 +1,10 @@
+## [2.0.32](https://github.com/DerYeger/vecti/compare/v2.0.31...v2.0.32) (2022-08-18)
+
+
+### Bug Fixes
+
+* **deps:** update dependency vitepress to v1.0.0-alpha.8 ([266bbeb](https://github.com/DerYeger/vecti/commit/266bbebadb0d7cd85c663131abe9f60aea6065b4))
+
 ## [2.0.31](https://github.com/DerYeger/vecti/compare/v2.0.30...v2.0.31) (2022-08-17)
 
 
