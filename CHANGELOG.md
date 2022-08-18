@@ -1,3 +1,10 @@
+# [2.1.0](https://github.com/DerYeger/vecti/compare/v2.0.32...v2.1.0) (2022-08-18)
+
+
+### Features
+
+* distribute `mjs` file ([14d900e](https://github.com/DerYeger/vecti/commit/14d900e7e7f5d751545bb7f789370b84ac50cd5b))
+
 ## [2.0.32](https://github.com/DerYeger/vecti/compare/v2.0.31...v2.0.32) (2022-08-18)
 
 
