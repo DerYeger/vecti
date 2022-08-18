@@ -39,10 +39,10 @@
     "dist"
   ],
   "main": "./dist/vecti.umd.js",
-  "module": "./dist/vecti.es.js",
+  "module": "./dist/vecti.es.mjs",
   "exports": {
     ".": {
-      "import": "./dist/vecti.es.js",
+      "import": "./dist/vecti.es.mjs",
       "require": "./dist/vecti.umd.js"
     }
   },

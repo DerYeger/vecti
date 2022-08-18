@@ -20,7 +20,8 @@ export default defineConfig({
       entry: path.resolve(__dirname, 'src/vecti.ts'),
       formats: ['es', 'umd'],
       name: Meta.name,
-      fileName: (format) => `${Meta.name}.${format}.js`,
+      fileName: (format) =>
+        `${Meta.name}.${format}.${format === 'es' ? 'mjs' : 'js'}`,
     },
   },
   resolve: {
