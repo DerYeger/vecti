@@ -1,3 +1,10 @@
+## [2.1.7](https://github.com/DerYeger/vecti/compare/v2.1.6...v2.1.7) (2022-08-26)
+
+
+### Bug Fixes
+
+* **deps:** update dependency typescript to v4.8.2 ([9a9bc1c](https://github.com/DerYeger/vecti/commit/9a9bc1c6816fd7c1802989303efab25a6298c564))
+
 ## [2.1.6](https://github.com/DerYeger/vecti/compare/v2.1.5...v2.1.6) (2022-08-25)
 
 
