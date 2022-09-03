@@ -1,3 +1,10 @@
+## [2.1.10](https://github.com/DerYeger/vecti/compare/v2.1.9...v2.1.10) (2022-09-03)
+
+
+### Bug Fixes
+
+* **deps:** update commitlint monorepo ([965fc34](https://github.com/DerYeger/vecti/commit/965fc34eb7995f90403e394d92d810d080ced5a8))
+
 ## [2.1.9](https://github.com/DerYeger/vecti/compare/v2.1.8...v2.1.9) (2022-09-03)
 
 
