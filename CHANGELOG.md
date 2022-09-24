@@ -1,3 +1,10 @@
+## [2.1.16](https://github.com/DerYeger/vecti/compare/v2.1.15...v2.1.16) (2022-09-24)
+
+
+### Bug Fixes
+
+* **deps:** update actions/stale action to v6 ([d03d1cc](https://github.com/DerYeger/vecti/commit/d03d1cc692107798d4d7efa8a75407633f73fcbb))
+
 ## [2.1.15](https://github.com/DerYeger/vecti/compare/v2.1.14...v2.1.15) (2022-09-24)
 
 
