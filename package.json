@@ -51,7 +51,7 @@
   "devDependencies": {
     "@commitlint/cli": "17.1.2",
     "@commitlint/config-conventional": "17.1.0",
-    "@types/node": "16.11.68",
+    "@types/node": "16.18.2",
     "@typescript-eslint/eslint-plugin": "5.40.1",
     "@typescript-eslint/parser": "5.40.1",
     "@vitest/ui": "0.24.3",
@@ -69,9 +69,9 @@
     "prettier": "2.7.1",
     "rimraf": "3.0.2",
     "typescript": "4.8.4",
-    "vite": "3.1.8",
+    "vite": "3.2.1",
     "vite-plugin-dts": "1.6.6",
-    "vitepress": "1.0.0-alpha.21",
+    "vitepress": "1.0.0-alpha.26",
     "vitest": "0.24.3"
   },
   "publishConfig": {
