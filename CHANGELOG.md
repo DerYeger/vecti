@@ -1,3 +1,10 @@
+## [2.1.25](https://github.com/DerYeger/vecti/compare/v2.1.24...v2.1.25) (2022-10-29)
+
+
+### Bug Fixes
+
+* **deps:** update all non-major dependencies ([94ed9f2](https://github.com/DerYeger/vecti/commit/94ed9f240f35409c627c511bc43a39f242df3013))
+
 ## [2.1.24](https://github.com/DerYeger/vecti/compare/v2.1.23...v2.1.24) (2022-10-22)
 
 
