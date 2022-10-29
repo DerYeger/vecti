@@ -1,3 +1,10 @@
+## [2.1.27](https://github.com/DerYeger/vecti/compare/v2.1.26...v2.1.27) (2022-10-29)
+
+
+### Bug Fixes
+
+* **deps:** update dependency @types/node to v18 ([4d76f80](https://github.com/DerYeger/vecti/commit/4d76f80a44814f37d45cd6a74929505027929088))
+
 ## [2.1.26](https://github.com/DerYeger/vecti/compare/v2.1.25...v2.1.26) (2022-10-29)
 
 
