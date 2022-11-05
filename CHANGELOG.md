@@ -1,3 +1,10 @@
+## [2.1.30](https://github.com/DerYeger/vecti/compare/v2.1.29...v2.1.30) (2022-11-05)
+
+
+### Bug Fixes
+
+* **deps:** update commitlint monorepo to v17.2.0 ([43b5d23](https://github.com/DerYeger/vecti/commit/43b5d23155952e7f4a424926f3e1f6267d772060))
+
 ## [2.1.29](https://github.com/DerYeger/vecti/compare/v2.1.28...v2.1.29) (2022-11-05)
 
 
