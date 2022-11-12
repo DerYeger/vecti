@@ -1,3 +1,10 @@
+## [2.1.32](https://github.com/DerYeger/vecti/compare/v2.1.31...v2.1.32) (2022-11-12)
+
+
+### Bug Fixes
+
+* **deps:** update typescript-eslint monorepo to v5.42.1 ([6bef8f8](https://github.com/DerYeger/vecti/commit/6bef8f8abb723a0786bbec53b47ba389d3bf21e2))
+
 ## [2.1.31](https://github.com/DerYeger/vecti/compare/v2.1.30...v2.1.31) (2022-11-12)
 
 
