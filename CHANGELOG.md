@@ -1,3 +1,10 @@
+## [2.1.33](https://github.com/DerYeger/vecti/compare/v2.1.32...v2.1.33) (2022-11-12)
+
+
+### Bug Fixes
+
+* **deps:** update vitest monorepo to v0.25.1 ([9fa84e9](https://github.com/DerYeger/vecti/commit/9fa84e90151a7857f431d23480e87bea8149ca5f))
+
 ## [2.1.32](https://github.com/DerYeger/vecti/compare/v2.1.31...v2.1.32) (2022-11-12)
 
 
